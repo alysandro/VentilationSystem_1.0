@@ -1,0 +1,19 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 24.4.2 # Или более новая версия
+    hooks:
+      - id: black
+  - repo: github.com
+    rev: 6.1.0 # Или более новая версия
+    hooks:
+      - id: flake8
+  - repo: github.com
+    rev: v1.10.0 # Или более новая версия
+    hooks:
+      - id: mypy
+        args: [--ignore-missing-imports]
+  - repo: github.com
+    rev: 5.13.2 # Или более новая версия
+    hooks:
+      - id: isort
+        args: ["--profile", "black"]
