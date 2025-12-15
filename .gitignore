@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+.venv
+env/
+venv/
+virtualenv/
+dist/
+build/
+*.egg-info/
+
+# Логи
+*.log
+ventilation.log
+
+# Настройки
+settings.json
+.local
+.env
+.env.local
+
+# Редакторы
+.idea/
+.vscode/
+*.swp
+*.swo

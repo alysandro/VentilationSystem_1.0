@@ -1,0 +1,21 @@
+[project]
+name = "ventilation-system"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "ALEXANDR_SH",email = "sandro.86@bk.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "flake8 (>=7.3.0,<8.0.0)"
+]

@@ -1,0 +1,7 @@
+{
+  "target_temp": 22.0,
+  "target_humidity": 50.0,
+  "co2_limit": 800,
+  "min_airflow": 30.0,
+  "recuperator_enabled": true
+}
