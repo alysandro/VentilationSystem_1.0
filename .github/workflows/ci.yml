@@ -37,7 +37,7 @@ jobs:
 
       - name: Проверка синтаксиса
         run: |
-          python -m py_compile ventilation.py
+          python -m py_compile src/ventilation.py
 
       - name: Запуск mypy
         run: |
