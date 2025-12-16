@@ -39,11 +39,20 @@ jobs:
         run: |
           python -m py_compile src/ventilation.py
 
-      - name: Запуск mypy
+      - name: Установить инструменты анализа кода
         run: |
-          python -m mypy ventilation.py
+          pip install flake8 mypy black
+      
+      - name: Проверка стиля кода (flake8)
+        run: |
+          python -m flake8 src/ventilation.py
+      
+      - name: Проверка типов (mypy)
+        run: |
+          python -m mypy src/ventilation.py
+      
+      - name: Проверка форматирования (black --check)
+        run: |
+          python -m black --check --diff src/ventilation.py
 
-      - name: Запуск flake8
-        run: |
-          python -m flake8 ventilation.py
 
