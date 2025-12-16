@@ -42,7 +42,10 @@ jobs:
       - name: Установить инструменты анализа кода
         run: |
           pip install flake8 mypy black
-      
+      - name: Установить зависимости
+        run: |
+          pip install Flask types-Flask flake8 mypy black
+    
       - name: Проверка стиля кода (flake8)
         run: |
           python -m flake8 src/ventilation.py
